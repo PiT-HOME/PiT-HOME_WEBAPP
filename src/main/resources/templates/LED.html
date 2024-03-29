@@ -1,0 +1,34 @@
+<head>
+    <title>Pi-it!</title>
+    <style>
+        .led-box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(153, 153, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#led-on-button').click(function() {
+                $.post("/led/on");
+                alert("ON");
+            });
+            $('#led-off-button').click(function() {
+                $.post("/led/off");
+                alert("OFF");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="led-box" id="led-on-button">LED ON</div>
+<div class="led-box" id="led-off-button">LED OFF</div>
+</body>
+</html>

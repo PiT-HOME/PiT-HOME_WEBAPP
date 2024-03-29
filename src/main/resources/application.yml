@@ -1,0 +1,40 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 30m
+
+spring:
+  datasource:
+    url: jdbc:mysql://database0219.chbdqjqobi3b.ap-northeast-2.rds.amazonaws.com:3306/pithome?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456789
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  thymeleaf:
+    cache: false
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode:
+
+  # spring data jpa
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  # spring security jwt token
+jwt:
+  secret: A6cj3R{{9=vT,qV
+  expiration: 604800000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+security:
+  ignored: /error
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PM Data</title>
+</head>
+<body>
+<h1>PM Data</h1>
+<div th:if="${pmData != null}">
+    <p>PM1.0: <span th:text="${pmData.pm1_0}"></span></p>
+    <p>PM2.5: <span th:text="${pmData.pm2_5}"></span></p>
+    <p>PM10: <span th:text="${pmData.pm10}"></span></p>
+</div>
+<div th:if="${pmData == null}">
+    <p>데이터가 없습니다.</p>
+</div>
+</body>
+</html>

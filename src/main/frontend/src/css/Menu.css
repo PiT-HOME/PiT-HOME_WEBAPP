@@ -1,0 +1,52 @@
+.Menu_bar {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.Menu_logo {
+    display: outline;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 60%;
+    z-index: 2;
+
+}
+
+.item {
+    display: flex;
+    margin-left: 150px;
+    z-index: 2;
+}
+
+.item_ {
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+
+.Menu_Link_style {
+    text-decoration: none;
+    color: black;
+}
+
+.Menu_Link_style:hover {
+    color: #007BBE;
+    font-weight: bolder;
+}
+
+.Menu_Link_style2 {
+    color: gray;
+}
+
+.Menu_Link_style2:hover {
+    color: black;
+    font-weight: bolder;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Power Bar Control</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<button id="powerbar-on">Power Bar ON</button>
+<button id="powerbar-off">Power Bar OFF</button>
+
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    $(document).ready(function(){
+        $("#powerbar-on").click(function(){
+            $.post("/powerbar/on", function(data, status){
+                alert("Power Bar ON command sent.");
+            });
+        });
+
+        $("#powerbar-off").click(function(){
+            $.post("/powerbar/off", function(data, status){
+                alert("Power Bar OFF command sent.");
+            });
+        });
+    });
+    /*]]>*/
+</script>
+</body>
+</html>

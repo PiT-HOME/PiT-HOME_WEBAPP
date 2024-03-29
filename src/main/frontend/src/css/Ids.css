@@ -1,0 +1,14 @@
+.board_box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    width: 55%;
+    z-index: 0;
+}
+
+.board_box img {
+    max-width: 100%;
+    margin-right: 20px;
+}

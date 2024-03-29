@@ -1,0 +1,21 @@
+.Mypage_item {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.image_grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 100vh; /* 화면 높이에 따라 중앙에 배열 */
+}
+
+.Mypage_item {
+    transition: transform 0.3s ease;
+}
+
+.Mypage_item:hover {
+    transform: scale(1.1);
+}

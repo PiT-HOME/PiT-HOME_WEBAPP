@@ -22,7 +22,7 @@ function Lamp() {
     const handleOn = async () => {
         setIsOn(true);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/led/on');
+            const response = await axios.post('http://127.0.0.1:8080/led/on');
             console.log(response.data); // 필요에 따라 사용
         } catch (error) {
             console.error(error);
@@ -32,7 +32,7 @@ function Lamp() {
     const handleOff = async () => {
         setIsOn(false);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/led/off');
+            const response = await axios.post('http://127.0.0.1:8080/led/off');
             console.log(response.data); // 필요에 따라 사용
         } catch (error) {
             console.error(error);
@@ -43,7 +43,7 @@ function Lamp() {
     const handleOn2 = async () => {
         setIsOn2(true);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/led/on');
+            const response = await axios.post('http://127.0.0.1:8080/led/on');
             console.log(response.data); // 필요에 따라 사용
         } catch (error) {
             console.error(error);
@@ -53,7 +53,7 @@ function Lamp() {
     const handleOff2 = async () => {
         setIsOn2(false);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/led/off');
+            const response = await axios.post('http://127.0.0.1:8080/led/off');
             console.log(response.data); // 필요에 따라 사용
         } catch (error) {
             console.error(error);

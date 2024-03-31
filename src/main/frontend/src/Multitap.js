@@ -15,7 +15,7 @@ function MultiTap() {
     const handleOn = async () => {
         setIsOn(true);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/powerbar/on');
+            const response = await axios.post('http://127.0.0.1:8080/powerbar/on');
             console.log(response.data); // 필요에 따라 사용
         } catch (error) {
             console.error(error);
@@ -25,7 +25,7 @@ function MultiTap() {
     const handleOff = async () => {
         setIsOn(false);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/powerbar/off');
+            const response = await axios.post('http://127.0.0.1:8080/powerbar/off');
             console.log(response.data); // 필요에 따라 사용.
         } catch (error) {
             console.error(error);

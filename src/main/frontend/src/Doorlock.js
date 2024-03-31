@@ -17,7 +17,7 @@ function Doorlock() {
     const handleOpen = async () => {
         setIsOn(true);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/door/open'); //백엔드에서 제공하는 실제 주소로 대체
+            const response = await axios.post('http://127.0.0.1:8080/door/open'); //백엔드에서 제공하는 실제 주소로 대체
             console.log(response.data); // 필요에 따라 응답 데이터 사용
         } catch (error) {
             console.error(error);
@@ -27,7 +27,7 @@ function Doorlock() {
     const handleClose = async () => {
         setIsOn(false);
         try {
-            const response = await axios.post('http://43.203.124.111:8080/door/close');
+            const response = await axios.post('http://127.0.0.1:8080/door/close');
             console.log(response.data); // 필요에 따라 사용
         } catch (error) {
             console.error(error);

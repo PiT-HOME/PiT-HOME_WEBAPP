@@ -74,7 +74,7 @@ const Login = () => {
     };
 
     const handleLogin = () => {
-        axios.post('http://43.203.124.111:8080/login', loginInfo)
+        axios.post('http://127.0.0.1:8080/login', loginInfo)
             .then(response => {
                 const token = response.data;
                 localStorage.setItem('token', token);

@@ -157,7 +157,7 @@ function Ids() {
     }, []);
 
     return (
-        <body className="Main_body">
+        <body className="Ids_body">
         <div>
             <div>
                 <Menu/>
@@ -165,14 +165,18 @@ function Ids() {
 
             <div className='board_box'>
                 <div className='dashboard_box' style={{width: '100%', height: '600px'}}>
-                    {/* iframe을 사용하여 특정 URL을 렌더링 */}
                     <iframe
                         src="https://cloudwatch.amazonaws.com/dashboard.html?dashboard=Pit_log&context=eyJSIjoidXMtZWFzdC0xIiwiRCI6ImN3LWRiLTM2NTgxNDQyNzgzOCIsIlUiOiJ1cy1lYXN0LTFfckdaVzVOZUszIiwiQyI6IjNhYW83NTltYW02aTBjcWUwazNkMWFyZWkwIiwiSSI6InVzLWVhc3QtMTo5MjM1ZTVlNC01MGVlLTQzNDAtYTg2Mi1lYzQ5NTYyZjc4NTMiLCJNIjoiUHVibGljIn0%3D"
-                        style={{width: '100%', height: '100%'}}/>
+                        style={{width: '100%', height: '105%'}}/>
                 </div>
-                <img className='safe_box' src={safe}/>
             </div>
+
+            <div className='safe_box' >
+                <img className='safe' src={safe}/>
+            </div>
+
         </div>
+
         </body>
     );
 }

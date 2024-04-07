@@ -56,5 +56,5 @@ app.post('/Ids', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://127.0.0.1:${port}/Ids`);
+    console.log(`Server is running on http://43.203.119.177:${port}/Ids`);
 });
